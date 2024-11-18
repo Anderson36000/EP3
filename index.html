@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Video de Fondo</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font/all.min.css">
+</head>
+<body>
+    <!-- Cabecera con logo y enlaces -->
+    <header class="header">
+        <img src="imagenes/escudo.jpg" alt="Logo" class="logo">
+        <nav class="nav">
+            <ul>
+                <li><a href="">Inicio</a>
+                    <i class="fa-solid fa-ghost"></i>
+                <li><a href="#">Datos</a>
+                <i class="fa-solid fa-shield-halved"></i>
+                <li><a href="#">Mapas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección con video de fondo y título -->
+    <section class="video-background">
+        <video autoplay muted loop id="video-bg">
+            <source src="imagenes/video.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+        <div class="content">
+            <h1>Bienvenido a Mi Página</h1>
+            <a href="#" class="btn">Ingresar a Mi Página</a>
+        </div>
+    </section>
+
+    <!-- Sección 02: Título <h2>, Párrafo <p> y Formulario con imagen a la izquierda -->
+        <section class="section-04">
+            <h2>ENVIA TUS DATOS</h2>
+            <p>Este es un párrafo de una línea que describe brevemente la nueva sección.</p>
+        </section>
+
+        <div class="form-container">
+            <!-- Imagen al costado izquierdo -->
+            <div class="form-image">
+                <img src="imagenes/IMAGEN PRINCIPAL.jpg" alt="Imagen relacionada al formulario">
+            </div>
+
+            <!-- Formulario de contacto -->
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    
+
+    <!-- Sección Mapa -->
+    <section class="map-section">
+        <h2>Ubicación del Instituto</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15605.077031495155!2d-77.0529043!3d-12.0937103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9aa6b702e0f%3A0x55c71153c8c3bda4!2sISIL%20-%20San%20Isidro!5e0!3m2!1ses-419!2spe!4v1731888091924!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+   
+<!-- Nueva Cabecera de Sección 02, al final de la página -->
+    <section class="section-04">
+        <h2>NUESTRA GALERIA DE IMAGENES</h2>
+        <p>Este es un párrafo de una línea que describe brevemente la nueva sección.</p>
+    </section>
+
+    <!-- Galería colocada debajo de la cabecera de la nueva sección -->
+    
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="imagenes/imagen01.jpg" alt="Imagen 1">
+                <p>Texto 1 para imagen 1</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/imagen02.jpg" alt="Imagen 2">
+                <p>Texto 2 para imagen 2</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/imagen03.jpg" alt="Imagen 3">
+                <p>Texto 3 para imagen 3</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/imagen04.jpg" alt="Imagen 4">
+                <p>Texto 4 para imagen 4</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/imagen05.jpg" alt="Imagen 5">
+                <p>Texto 5 para imagen 5</p>
+            </div>
+            <div class="gallery-item">
+                <img src="imagenes/imagen06.jpg" alt="Imagen 6">
+                <p>Texto 6 para imagen 6</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+          <!-- Fila 1 -->
+          <div class="footer-item social-icons">
+            <!-- Iconos de redes sociales -->
+            <a href="#" class="social-icon">  <i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+          
+          <div class="footer-item student-info">
+            <!-- Nombres y apellidos del alumno -->
+            <p>Anderson Felix Ludeña Martinez </p>
+          </div>
+          
+          <div class="footer-item contact-info">
+            <!-- Número de teléfono fijo y móvil -->
+            <p>Tel. Fijo: (01) 234 5678</p>
+            <p>Tel. Móvil: 967 465 262</p>
+          </div>
+      
+          <!-- Fila 2 -->
+          <div class="footer-item institute-info">
+            <!-- Nombre del instituto, distrito y ciudad -->
+            <p>Instituto ISIL</p>
+            <p>Lima ,San Isidro </p>
+          </div>
+          
+          <div class="footer-item career-info">
+            <!-- Nombre de la carrera y año actual -->
+            <p>Desarrollo de software</p>
+            <p>1er ciclo</p>
+          </div>
+          
+          <div class="footer-item teacher-info">
+            <!-- Nombre del docente -->
+            <p>Roberto Inga Alvarado</p>
+          </div>
+        </div>
+      </footer>
+         
+</body>
+</html>
+
+</body>
+</html>

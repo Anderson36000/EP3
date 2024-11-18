@@ -1,0 +1,286 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para la cabecera */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Estilo del logo */
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Estilo de la barra de navegación */
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo del contenedor del video de fondo */
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden;
+}
+
+/* Estilo del video */
+#video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra toda el área sin distorsionar */
+}
+
+/* Estilo del contenido sobre el video */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* Estilo del título */
+.content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para hacer el texto más legible */
+}
+
+/* Estilo del botón */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+
+/* Estilos para la Sección 02 */
+.section-02 {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-02 h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.section-02 p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* Estilos para el contenedor del formulario y la imagen */
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Imagen al costado del formulario */
+.form-image {
+    flex: 1;
+    max-width: 45%;
+}
+
+.form-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para el Formulario */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 12px 25px;
+    background-color: #ff6600;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #ff4500;
+}
+
+/* Estilos para las cabeceras de las secciones */
+section h2 {
+    font-size: 2rem;
+    padding: 15px;
+    color: white;
+    background-color: #333; /* Fondo para las cabeceras */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para la galería */
+.gallery-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas por defecto */
+    gap: 20px;
+}
+
+/* Asegura que todas las imágenes tengan el mismo tamaño */
+.gallery-item img {
+    width: 100%;
+    height: 200px; /* Establecemos una altura fija */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Efecto de zoom en la imagen */
+}
+
+.gallery-item p {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Hacer que la imagen 5 y 6 ocupen toda la fila */
+.gallery-item:nth-child(5),
+.gallery-item:nth-child(6) {
+    grid-column: span 2; /* Ocupa dos columnas */
+}
+
+/* Sección mapa */
+.map-section {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    grid-template-rows: repeat(2, auto);  /* Dos filas de tamaño automático */
+    gap: 20px;
+  }
+  
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-item p {
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    color: #00aaff;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr; /* En pantallas pequeñas, una sola columna */
+      grid-template-rows: repeat(6, auto); /* Se ajusta la cantidad de filas */
+    }
+  }
+  
